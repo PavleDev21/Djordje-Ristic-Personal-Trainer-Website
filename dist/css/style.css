@@ -345,7 +345,65 @@ p {
 
 .banner {
   position: relative;
+  padding-top: 40vh;
   height: 100vh; }
+
+.banner-content {
+  padding-left: 50%; }
+
+.banner-title {
+  margin-bottom: 35px;
+  color: #FFFFFF;
+  font-size: 80px;
+  line-height: 90px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.banner-color-span {
+  color: #F36100; }
+
+.banner-btn {
+  margin-left: 2px;
+  font-family: "Mulish";
+  display: inline-block;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 17px 30px 16px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid #F36100;
+  transition: 0.3s; }
+  .banner-btn:hover {
+    background-color: #F36100;
+    transition: 0.3s; }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .banner {
+    padding-top: 35vh; }
+  .banner-content {
+    padding-left: 0;
+    max-width: 720px;
+    margin: 0 auto; }
+  .banner-title {
+    margin-bottom: 35px;
+    font-size: 71px;
+    line-height: 81px; } }
+
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .banner {
+    padding-top: 30vh; }
+  .banner-content {
+    padding-left: 0;
+    max-width: 540px;
+    margin: 0 auto; }
+  .banner-title {
+    margin-bottom: 35px;
+    font-size: 67px;
+    line-height: 80px; } }
 
 .about-me {
   padding: 100px 0;
