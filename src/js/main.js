@@ -61,3 +61,21 @@ function nav() {
 }
 
 nav();
+
+function miniGOverlay() {
+    var $btn = $('.mini-gallery-btn');
+    var $close = $('.mg-overlay-btn');
+    var $overlay = $('.mini-gallery-overlay');
+    var $overlayImg = $('.mg-overlay-img');
+
+    $btn.on('click', function() {
+        var url = $(this).parent().data('url');
+        $overlayImg.attr('src', url);
+        $overlay.show();
+    })
+    $close.on('click', function() {
+        $overlay.hide();
+    })
+}
+
+miniGOverlay();
