@@ -742,12 +742,15 @@ p {
     width: 45px; }
 
 .training-cards {
+  padding-top: 35px;
+  max-width: 800px;
+  margin: 0 auto;
   font-size: 0; }
 
 .training-item-wrap {
-  padding: 20px;
+  padding: 20px 35px;
   display: inline-block;
-  width: 33.33%;
+  width: 50%;
   vertical-align: top; }
 
 .training-item {
@@ -798,6 +801,12 @@ p {
   .training-btn:hover {
     background-color: #F36100;
     transition: 0.3s; }
+
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .training-item-wrap {
+    padding: 20px;
+    display: block;
+    width: 100%; } }
 
 .mini-gallery {
   position: relative;

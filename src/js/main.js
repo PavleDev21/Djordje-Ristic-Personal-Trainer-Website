@@ -38,7 +38,7 @@ function bannerVidBtn() {
 bannerVidBtn();
 
 function nav() {
-    var $navLink = $('.nav-temp');
+    var $navLink = $('.nav-link');
     var $section = $('.js-section');
     var $navIcon = $('.nav-toggle-icon');
     var $navigation = $('.navigation');
