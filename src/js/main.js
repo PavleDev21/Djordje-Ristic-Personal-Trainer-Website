@@ -8,15 +8,34 @@ $navToggle.on('click', function() {
     $navIcon.toggleClass('nav-toggle-active');
 })
 
-if ($(window).width() <= 768) {
-    $(document).scroll(function() {
-        if ( $(document).scrollTop() >= 60 ) {
-            $header.addClass('color-change');
-        } else {
-            $header.removeClass('color-change');
-        }
-    });
+function scrollHeader() {
+    if ($(window).width() <= 768) {
+        $(document).scroll(function() {
+            if ( $(document).scrollTop() >= 60 ) {
+                $header.addClass('color-change');
+            } else {
+                $header.removeClass('color-change');
+            }
+        });
+    }
+    else {
+        $(document).scroll(function() {
+            if ( $(document).scrollTop() >= 70 ) {
+                $header.addClass('color-change');
+                $navigation.addClass('nav-scroll');
+                $('.logo-link').addClass('logo-scroll');
+            } else {
+                $header.removeClass('color-change');
+                $navigation.removeClass('nav-scroll');
+                $('.logo-link').removeClass('logo-scroll');
+            }
+        });
+    }
 }
+
+scrollHeader();
+
+
 function bannerBtn() {
     var $bannerBtn = $('.banner-btn');
     var sectionOffset = $('.about-me').offset().top - 61;
@@ -29,7 +48,12 @@ bannerBtn();
 
 function bannerVidBtn() {
     var $bannerVidBtn = $('.banner-vid-btn');
-    var sectionOffset = $('.social-and-contact').offset().top - 61;
+        if ($(window).width() <= 768) {
+            var sectionOffset = $('.social-and-contact').offset().top - 61;
+        }
+        else {
+            var sectionOffset = $('.social-and-contact').offset().top - 70;
+        }
     $bannerVidBtn.on('click', function() {
         $('html,body').stop().animate({scrollTop: sectionOffset}, 900);
     })
@@ -52,8 +76,13 @@ function nav() {
     });
   
     $navLink.on('click', function() {
-    var index = $(this).data('index');
-        var sectionOffset = $('.js-section[data-index="'+ index + '"]').offset().top - 61;
+        var index = $(this).data('index');
+        if ($(window).width() <= 768) {
+            var sectionOffset = $('.js-section[data-index="'+ index + '"]').offset().top - 61;
+        }
+        else {
+            var sectionOffset = $('.js-section[data-index="'+ index + '"]').offset().top - 70;
+        }
         $('html,body').stop().animate({scrollTop: sectionOffset}, 900);
         $navigation.toggleClass('nav-show');
         $navIcon.toggleClass('nav-toggle-active');
