@@ -35,6 +35,7 @@
     vertical-align: top;
 }
 .food-item {
+    padding: 33px 0;
     overflow: hidden;
     //padding: 40px 30px 52px;
     transform: skewY(-4deg);
@@ -42,36 +43,47 @@
     text-align: center;
     border: 1px solid $tundora;
 }
-.food-item-top {
-    position: relative;
-    //box-shadow: inset 0px -10px 10px 0px $bc1;
-    margin-top: -12px;
-    padding-top: 50px;
-    transform: skewY(4deg);
-    @extend %bc-img;
-    margin-bottom: 20px;
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        //background-color: rgba($bc1, 0.6);
-        z-index: -1;
-    }
-}
 .food-item-title {
-    //transform: skewY(4deg);
+    transform: skewY(4deg);
     padding-bottom: 15px;
-    font-size: 28px;
+    font-size: 30px;
     line-height: 35px;
     font-weight: 600;
     color: $white;
 }
+.food-item-price {
+    margin-bottom: 7px;
+    transform: skewY(4deg);
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 65px;
+    color: $blaze-orange;
+}
+.food-plan-lenght {
+    display: inline-block;
+    transform: skewY(4deg);
+    color: $silver;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+.food-list {
+    transform: skewY(4deg);
+    margin: 36px 0;
+}
+.food-list-item {
+    color: $silver;
+    display: block;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 32px;
+}
 .food-btn {
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 9px;
     padding: 14px 30px 13px;
     display: block;
     text-decoration: none;
