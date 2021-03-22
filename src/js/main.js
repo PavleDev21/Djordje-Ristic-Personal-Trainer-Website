@@ -108,3 +108,20 @@ function miniGOverlay() {
 }
 
 miniGOverlay();
+
+function form() {
+    var $form = $('.buy-form-container');
+    var $triggerBtn = $('.form-trigger');
+    
+    $triggerBtn.on('click', function() {
+        $form.show();
+    });
+
+    $form.on('click', function(data, handler){
+      if (data.target == this) {
+        $form.hide();
+      }
+    });
+}
+
+form();

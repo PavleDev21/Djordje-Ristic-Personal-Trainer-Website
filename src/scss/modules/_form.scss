@@ -1,0 +1,70 @@
+.buy-form-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($black, 0.5);
+    z-index: 1000;
+}
+.buy-form {
+    padding: 70px 0;
+    text-align: center;
+    background-color: $bc2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    max-width: 95%;
+    label {
+        color: $white;
+        font-size: 17px;
+        line-height: 20px;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+    }
+    input {
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        color: $white;
+        margin-bottom: 20px;
+        border: 2px solid $blaze-orange;
+        background-color: $bc2;
+    }
+    select {
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        color: $white;
+        margin-bottom: 40px;
+        border: 2px solid $blaze-orange;
+        background-color: $bc2;
+        -webkit-appearance: none;
+        border-radius: 0;
+    }
+}
+.btn-submit {
+    cursor: pointer;
+    font-family: $font2;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 11px 29px;
+    color: $white;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid $blaze-orange;
+    transition: 0.3s;
+    &:hover {
+        background-color: $blaze-orange;
+        transition: 0.3s;
+    }
+}

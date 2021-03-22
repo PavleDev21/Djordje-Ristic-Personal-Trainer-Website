@@ -9,7 +9,7 @@
 <body class="body">
     <header class="header">
         <div class="wrapper">
-            <a href="index.html" class="logo-link"><img src="src/images/logo.png" alt="logo" class="logo-img"></a>
+            <a href="index.html" class="logo-link"><img src="src/images/logo (1).png" alt="logo" class="logo-img"></a>
             <div class="navigation">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="javascript:;" class="nav-link">O meni</a></li>
@@ -24,6 +24,26 @@
         </div>
     </header>
     <main class="main">
+        <div class="buy-form-container">
+            <form action="buy-form.php" method="POST" class="buy-form">
+                <label for="name">Ime:</label>
+                <input name="name" type="text" size="25" required>
+                <br>
+                <label for="email">Email:</label>
+                <input name="email" type="email" size="25" required>
+                <br>
+                <label for="plan">Plan:</label>
+                <select name="plan" required>
+                    <option disabled selected value> -- Izaberite plan -- </option>
+                    <option value="food-shred">Plan Ishrane - Shred 80e</option>
+                    <option value="food-bulk">Plan Ishrane - Bulk 80e</option>
+                    <option value="training-shred">Plan Treninga - Shred 80e</option>
+                    <option value="training-bukl">Plan Treninga - Bulk 80e</option>
+                </select>
+                <br>
+                <button type="submit" class="btn-submit">Prijavi me</button>
+            </form>
+        </div>
         <div class="banner" style="background-image: url(src/images/banner-bac.png);">
             <div class="wrapper">
                 <div class="banner-content">
@@ -151,7 +171,7 @@
                                 <li class="training-list-item">Lorem ipsum iso</li>
                                 <li class="training-list-item">Lorem ipsum iso</li>
                             </ul>
-                            <a href="javascript:;" class="training-btn">Prijavi me</a>
+                            <a href="javascript:;" class="training-btn form-trigger">Prijavi me</a>
                         </div>
                     </div>
                     <div class="training-item-wrap">
@@ -165,7 +185,7 @@
                                 <li class="training-list-item">Lorem ipsum iso</li>
                                 <li class="training-list-item">Lorem ipsum iso</li>
                             </ul>
-                            <a href="javascript:;" class="training-btn">Prijavi me</a>
+                            <a href="javascript:;" class="training-btn form-trigger">Prijavi me</a>
                         </div>
                     </div>
                 </div>
@@ -186,7 +206,7 @@
                                 <li class="food-list-item">Lorem ipsum iso</li>
                                 <li class="food-list-item">Lorem ipsum iso</li>
                             </ul>
-                            <a href="javascript:;" class="food-btn">Prijavi me</a>
+                            <a href="javascript:;" class="food-btn form-trigger">Prijavi me</a>
                         </div>
                     </div>
                     <div class="food-item-wrap">
@@ -200,7 +220,7 @@
                                 <li class="food-list-item">Lorem ipsum iso</li>
                                 <li class="food-list-item">Lorem ipsum iso</li>
                             </ul>
-                            <a href="javascript:;" class="food-btn">Prijavi me</a>
+                            <a href="javascript:;" class="food-btn form-trigger">Prijavi me</a>
                         </div>
                     </div>
                 </div>

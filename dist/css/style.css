@@ -345,17 +345,6 @@ p {
     .nav-link::after {
       display: none; } }
 
-.footer {
-  padding: 20px 0;
-  background-color: #000000; }
-
-.footer-text {
-  text-align: center;
-  color: #A9A9A9;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px; }
-
 .banner {
   position: relative;
   padding-top: 40vh;
@@ -655,80 +644,6 @@ p {
   .why-us-card-wrap:nth-child(3) {
     margin-bottom: 0px; } }
 
-.banner-vid {
-  position: relative;
-  height: 550px; }
-  .banner-vid::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7); }
-
-.banner-vid-src {
-  object-fit: cover;
-  position: absolute;
-  width: 100%;
-  height: 100%; }
-
-.banner-vid-content {
-  width: 100%;
-  padding: 0 20px;
-  padding-top: 30px;
-  text-align: center;
-  background-color: transparent;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3; }
-
-.banner-vid-title {
-  margin-bottom: 25px;
-  color: #FFFFFF;
-  font-size: 48px;
-  line-height: 50px;
-  font-weight: 700;
-  text-transform: uppercase; }
-
-.banner-vid-subtitle {
-  font-family: "Mulish";
-  display: block;
-  margin-bottom: 45px;
-  color: #C4C4C4;
-  font-size: 20px;
-  line-height: 25px;
-  font-weight: 700;
-  text-transform: uppercase; }
-
-.banner-vid-btn {
-  font-family: "Mulish";
-  display: inline-block;
-  font-size: 14px;
-  line-height: 15px;
-  letter-spacing: 1px;
-  font-weight: 700;
-  padding: 17px 30px 16px;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  text-decoration: none;
-  background-color: transparent;
-  border: 2px solid #F36100;
-  transition: 0.3s; }
-  .banner-vid-btn:hover {
-    background-color: #F36100;
-    transition: 0.3s; }
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .banner-vid-content {
-    padding-top: 20px; } }
-
-@media only screen and (min-width: 120px) and (max-width: 767px) {
-  .banner-vid-content {
-    padding-top: 0; } }
-
 .training-plan {
   padding: 75px 0; }
 
@@ -941,6 +856,146 @@ p {
     display: block;
     width: 100%; } }
 
+.buy-form-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000; }
+
+.buy-form {
+  padding: 70px 0;
+  text-align: center;
+  background-color: #151515;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  max-width: 95%; }
+  .buy-form label {
+    color: #FFFFFF;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0.5px; }
+  .buy-form input {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    border: 2px solid #F36100;
+    background-color: #151515; }
+  .buy-form select {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    border: 2px solid #F36100;
+    background-color: #151515;
+    -webkit-appearance: none;
+    border-radius: 0; }
+
+.btn-submit {
+  cursor: pointer;
+  font-family: "Mulish";
+  display: inline-block;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 11px 29px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid #F36100;
+  transition: 0.3s; }
+  .btn-submit:hover {
+    background-color: #F36100;
+    transition: 0.3s; }
+
+.banner-vid {
+  position: relative;
+  height: 550px; }
+  .banner-vid::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); }
+
+.banner-vid-src {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+.banner-vid-content {
+  width: 100%;
+  padding: 0 20px;
+  padding-top: 30px;
+  text-align: center;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3; }
+
+.banner-vid-title {
+  margin-bottom: 25px;
+  color: #FFFFFF;
+  font-size: 48px;
+  line-height: 50px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.banner-vid-subtitle {
+  font-family: "Mulish";
+  display: block;
+  margin-bottom: 45px;
+  color: #C4C4C4;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.banner-vid-btn {
+  font-family: "Mulish";
+  display: inline-block;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 17px 30px 16px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid #F36100;
+  transition: 0.3s; }
+  .banner-vid-btn:hover {
+    background-color: #F36100;
+    transition: 0.3s; }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .banner-vid-content {
+    padding-top: 20px; } }
+
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .banner-vid-content {
+    padding-top: 0; } }
+
 .mini-gallery {
   position: relative;
   background-color: #151515;
@@ -1093,3 +1148,14 @@ p {
   .sac-item {
     display: block;
     width: 100%; } }
+
+.footer {
+  padding: 20px 0;
+  background-color: #000000; }
+
+.footer-text {
+  text-align: center;
+  color: #A9A9A9;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px; }
