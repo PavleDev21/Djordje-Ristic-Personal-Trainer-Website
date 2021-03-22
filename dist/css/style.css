@@ -128,11 +128,11 @@ Glyphs list
 .icon-photo::before {
   content: '\ea07'; }
 
-.header .wrapper::before, .header .wrapper::after {
+.header .wrapper::before, .buy-form::before, .header .wrapper::after, .buy-form::after {
   content: '';
   display: table; }
 
-.header .wrapper::after {
+.header .wrapper::after, .buy-form::after {
   clear: both; }
 
 .wrapper {
@@ -867,7 +867,7 @@ p {
   z-index: 1000; }
 
 .buy-form {
-  padding: 70px 0;
+  padding: 50px 20px;
   text-align: center;
   background-color: #151515;
   position: absolute;
@@ -876,21 +876,19 @@ p {
   transform: translate(-50%, -50%);
   width: 450px;
   max-width: 95%; }
-  .buy-form label {
-    color: #FFFFFF;
-    font-size: 17px;
-    line-height: 20px;
-    font-weight: 400;
-    letter-spacing: 0.5px; }
   .buy-form input {
+    padding: 9px;
     font-size: 13px;
     line-height: 20px;
     font-weight: 400;
     letter-spacing: 0.5px;
     color: #FFFFFF;
-    margin-bottom: 20px;
-    border: 2px solid #F36100;
-    background-color: #151515; }
+    margin-bottom: 60px;
+    border: none;
+    border-bottom: 2px solid #F36100;
+    background-color: #151515;
+    -webkit-appearance: none;
+    border-radius: 0; }
   .buy-form select {
     font-size: 13px;
     line-height: 20px;
@@ -898,15 +896,30 @@ p {
     letter-spacing: 0.5px;
     color: #FFFFFF;
     margin-bottom: 40px;
-    border: 2px solid #F36100;
+    border: none;
+    border-bottom: 2px solid #F36100;
     background-color: #151515;
     -webkit-appearance: none;
     border-radius: 0; }
 
+.form-name {
+  float: left;
+  width: 46%; }
+
+.form-email {
+  float: right;
+  width: 46%; }
+
+.form-select {
+  padding: 9px;
+  float: left;
+  width: 60%; }
+
 .btn-submit {
+  float: right;
   cursor: pointer;
   font-family: "Mulish";
-  display: inline-block;
+  display: block;
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 1px;
@@ -921,6 +934,17 @@ p {
   .btn-submit:hover {
     background-color: #F36100;
     transition: 0.3s; }
+
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .form-email,
+  .form-name,
+  .form-select {
+    float: none;
+    width: 100%;
+    display: block; }
+  .btn-submit {
+    float: none;
+    display: inline-block; } }
 
 .banner-vid {
   position: relative;

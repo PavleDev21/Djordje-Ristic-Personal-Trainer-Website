@@ -26,21 +26,15 @@
     <main class="main">
         <div class="buy-form-container">
             <form action="buy-form.php" method="POST" class="buy-form">
-                <label for="name">Ime:</label>
-                <input name="name" type="text" size="25" required>
-                <br>
-                <label for="email">Email:</label>
-                <input name="email" type="email" size="25" required>
-                <br>
-                <label for="plan">Plan:</label>
-                <select name="plan" required>
+                <input name="name" type="text" class="form-name" placeholder="Ime" required>
+                <input name="email" type="email" class="form-email" placeholder="Email" required>
+                <select name="plan" class="form-select" required>
                     <option disabled selected value> -- Izaberite plan -- </option>
                     <option value="food-shred">Plan Ishrane - Shred 80e</option>
                     <option value="food-bulk">Plan Ishrane - Bulk 80e</option>
                     <option value="training-shred">Plan Treninga - Shred 80e</option>
                     <option value="training-bukl">Plan Treninga - Bulk 80e</option>
                 </select>
-                <br>
                 <button type="submit" class="btn-submit">Prijavi me</button>
             </form>
         </div>

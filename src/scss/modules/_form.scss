@@ -9,7 +9,8 @@
     z-index: 1000;
 }
 .buy-form {
-    padding: 70px 0;
+    @extend %clearfix;
+    padding: 50px 20px;
     text-align: center;
     background-color: $bc2;
     position: absolute;
@@ -18,22 +19,19 @@
     transform: translate(-50%, -50%);
     width: 450px;
     max-width: 95%;
-    label {
-        color: $white;
-        font-size: 17px;
-        line-height: 20px;
-        font-weight: 400;
-        letter-spacing: 0.5px;
-    }
     input {
+        padding: 9px;
         font-size: 13px;
         line-height: 20px;
         font-weight: 400;
         letter-spacing: 0.5px;
         color: $white;
-        margin-bottom: 20px;
-        border: 2px solid $blaze-orange;
+        margin-bottom: 60px;
+        border: none;
+        border-bottom: 2px solid $blaze-orange;
         background-color: $bc2;
+        -webkit-appearance: none;
+        border-radius: 0;
     }
     select {
         font-size: 13px;
@@ -42,16 +40,31 @@
         letter-spacing: 0.5px;
         color: $white;
         margin-bottom: 40px;
-        border: 2px solid $blaze-orange;
+        border: none;
+        border-bottom: 2px solid $blaze-orange;
         background-color: $bc2;
         -webkit-appearance: none;
         border-radius: 0;
     }
 }
+.form-name {
+    float: left;
+    width: 46%;
+}
+.form-email {
+    float: right;
+    width: 46%;
+}
+.form-select {
+    padding: 9px;
+    float: left;
+    width: 60%;
+}
 .btn-submit {
+    float: right;
     cursor: pointer;
     font-family: $font2;
-    display: inline-block;
+    display: block;
     font-size: 12px;
     line-height: 15px;
     letter-spacing: 1px;
@@ -66,5 +79,19 @@
     &:hover {
         background-color: $blaze-orange;
         transition: 0.3s;
+    }
+}
+
+@include breakpoint(phone) {
+    .form-email,
+    .form-name,
+    .form-select {
+        float: none;
+        width: 100%;
+        display: block;
+    }
+    .btn-submit {
+        float: none;
+        display: inline-block;
     }
 }
