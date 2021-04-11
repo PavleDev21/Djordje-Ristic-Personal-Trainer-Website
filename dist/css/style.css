@@ -1031,6 +1031,9 @@ p {
   margin: 0 -5px;
   font-size: 0; }
 
+.temp-hidden-row {
+  display: none; }
+
 .mini-gallery-item {
   position: relative;
   padding: 5px;
@@ -1081,7 +1084,7 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 85%;
-  max-width: 85%; }
+  max-height: 75%; }
 
 .mg-overlay-btn {
   position: absolute;
@@ -1119,7 +1122,9 @@ p {
 
 @media only screen and (min-width: 120px) and (max-width: 767px) {
   .mini-gallery-item {
-    width: 100%; } }
+    width: 100%; }
+  .mg-overlay-img {
+    max-width: 90%; } }
 
 .social-and-contact .wrapper {
   font-size: 0; }

@@ -9,6 +9,9 @@
     margin: 0 -5px;
     font-size: 0;
 }
+.temp-hidden-row {
+    display: none;
+}
 .mini-gallery-item {
     position: relative;
     padding: 5px;
@@ -64,7 +67,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 85%;
-    max-width: 85%;
+    max-height: 75%;
 }
 .mg-overlay-btn {
     position: absolute;
@@ -109,5 +112,8 @@
 @include breakpoint(phone) {
     .mini-gallery-item {
         width: 100%;
+    }
+    .mg-overlay-img {
+        max-width: 90%;
     }
 }
