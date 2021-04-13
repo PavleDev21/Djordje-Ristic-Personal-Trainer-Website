@@ -3,14 +3,12 @@
     background-color: $bc2;
     overflow: hidden;
     padding: 100px 0;
+    display: none;
 }
 .mini-gallery-row {
     position: relative;
     margin: 0 -5px;
     font-size: 0;
-}
-.temp-hidden-row {
-    display: none;
 }
 .mini-gallery-item {
     position: relative;

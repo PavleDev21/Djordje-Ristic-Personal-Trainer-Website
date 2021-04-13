@@ -435,12 +435,12 @@ p {
 .about-content {
   display: inline-block;
   width: 55%;
-  vertical-align: top; }
+  vertical-align: bottom; }
 
 .about-img {
   display: inline-block;
   width: 45%;
-  vertical-align: top; }
+  vertical-align: bottom; }
 
 .about-img-src {
   object-fit: contain;
@@ -531,26 +531,34 @@ p {
     padding-left: 10px; }
   .about-content {
     width: 100%;
-    display: block; }
+    display: block;
+    margin-bottom: 50px; }
   .about-text {
     width: 100%; }
   .about-skills {
     width: 100%; }
   .about-img {
-    display: none; } }
+    padding-top: 50px;
+    display: block;
+    width: 100%;
+    text-align: center; } }
 
 @media only screen and (min-width: 120px) and (max-width: 767px) {
   .about-me {
     padding-left: 10px; }
   .about-content {
     width: 100%;
-    display: block; }
+    display: block;
+    margin-bottom: 25px; }
   .about-text {
     width: 100%; }
   .about-skills {
     width: 100%; }
   .about-img {
-    display: none; } }
+    padding-top: 50px;
+    display: block;
+    width: 100%;
+    text-align: center; } }
 
 .why-us {
   padding: 75px 0 65px 0;
@@ -1024,15 +1032,13 @@ p {
   position: relative;
   background-color: #151515;
   overflow: hidden;
-  padding: 100px 0; }
+  padding: 100px 0;
+  display: none; }
 
 .mini-gallery-row {
   position: relative;
   margin: 0 -5px;
   font-size: 0; }
-
-.temp-hidden-row {
-  display: none; }
 
 .mini-gallery-item {
   position: relative;
