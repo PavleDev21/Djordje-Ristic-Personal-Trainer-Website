@@ -49,10 +49,10 @@ bannerBtn();
 function bannerVidBtn() {
     var $bannerVidBtn = $('.banner-vid-btn');
         if ($(window).width() <= 768) {
-            var sectionOffset = $('.social-and-contact').offset().top - 61;
+            var sectionOffset = $('.footer').offset().top - 61;
         }
         else {
-            var sectionOffset = $('.social-and-contact').offset().top - 70;
+            var sectionOffset = $('.footer').offset().top - 70;
         }
     $bannerVidBtn.on('click', function() {
         $('html,body').stop().animate({scrollTop: sectionOffset}, 900);
